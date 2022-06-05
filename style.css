@@ -1,0 +1,111 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+}
+/*typografy*/
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  color: #143774;
+}
+.title {
+  font-size: 2rem;
+  margin: 0;
+}
+.sub-title {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0;
+}
+.article-title,
+.widget-title {
+  font-size: 1.5rem;
+}
+
+.article-read-more {
+  font-size: 0.875rem;
+  color: #1792d2;
+  font-weight: 700;
+  text-decoration: none;
+}
+.linked-text {
+  text-decoration: none;
+  color: #1792d2;
+}
+.article-read-more:hover,
+.article-read-more:focus,
+.linked-text:hover,
+.linked-text:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+.article-info {
+  font-size: 0.875rem;
+}
+.bold-text {
+  font-weight: 700;
+}
+/*layout*/
+header {
+  background-color: #f8f8f8;
+  padding: 2em 0;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid magenta;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid magenta;
+}
+.title-section {
+  text-align: center;
+  border: 1px solid magenta;
+}
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+}
+/*navigation*/
+nav ul {
+  border: 1px solid magenta;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list-item {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #717171;
+  padding: 0.25em 0;
+}
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+@media (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav li {
+    margin: 0.5em 0;
+  }
+}
