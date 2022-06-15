@@ -3,6 +3,8 @@
 <html>
   <head>
     <title>Responsive website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Ubuntu&display=swap"
@@ -19,9 +21,9 @@
         <!--close title-section-->
         <nav>
           <ul>
-            <li class="nav-list-item "><a class="current-page" href="index.html">Home</a></li>
+            <li class="nav-list-item"><a href="index.html">Home</a></li>
             <li class="nav-list-item"><a href="about-me.html">About me</a></li>
-            <li class="nav-list-item"><a href="recent-posts.html">Recent posts</a></li>
+            <li class="nav-list-item"><a class="current-page" href="recent-posts.html">Recent posts</a></li>
           </ul>
         </nav>
       </div>
@@ -29,16 +31,11 @@
     </header>
     <div class="container container-flex">
       <main role="main">
-        <article class="article-featured">
-          <h2 class="article-title">Finding simplicity in life</h2>
-          <img
-            src="images\annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
-            alt="Coffee cup from above"
-            class="article-img"
-          />
-          <p class="article-info">23 may | 2 comments</p>
-          <p class="article-body">
-            <span class="bold-text"
+        <article class="article-recent">
+          <div class="article-recent-main">
+            <h2 class="article-title">Finding simplicity in life</h2>
+            <p class="article-body">
+              <span class="bold-text"
               >Duis dapibus ante hendrerit ultrices mollis. Nullam vel interdum
               felis.</span
             >
@@ -50,8 +47,17 @@
             >Phasellus ante metus, pretium at velit vel, volutpat blandit
             tellus. Ut semper metus vitae tincidunt vulputate. Vestibulum a
             neque lorem.
-          </p>
-          <a href="#" class="article-read-more">Continue reading</a>
+            </p>
+            <a href="#" class="article-read-more">Continue reading</a>
+          </div>
+          <div class="article-recent-secondary">
+            <img
+            src="images\annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
+            alt="Coffee cup from above"
+            class="article-img"
+          />
+          <p class="article-info">23 may | 2 comments</p>
+          </div>
         </article>
         <article class="article-recent">
           <div class="article-recent-main">
